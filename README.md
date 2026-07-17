@@ -1,10 +1,6 @@
 # NovaPortfolio
 A modern, responsive and futuristic personal portfolio website built with HTML, CSS and JavaScript. Showcasing my projects, skills, learning journey and passion for Frontend Development, Cyber Security and Artificial Intelligence.
-# NovaPortfolio
-
-A modern personal developer portfolio showcasing my web development projects, technical skills and learning journey.
-
----
+ ---
 
 ## Live Demo
 
