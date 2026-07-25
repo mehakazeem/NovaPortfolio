@@ -362,7 +362,37 @@ Hero
 }/* ==========================================
    ABOUT
 ========================================== */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:70px 10%;
+}
 
+.stat-box{
+background:#111827;
+padding:35px;
+border-radius:15px;
+text-align:center;
+transition:.4s;
+border:1px solid rgba(0,255,255,.2);
+}
+
+.stat-box:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px cyan;
+}
+
+.stat-box h2{
+font-size:42px;
+color:#00ffff;
+margin-bottom:10px;
+}
+
+.stat-box p{
+color:#ddd;
+font-size:18px;
+}
 .about-container{
 
 display:grid;
