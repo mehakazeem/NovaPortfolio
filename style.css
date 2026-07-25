@@ -471,7 +471,59 @@ border:1px solid rgba(255,255,255,.08);
 color:var(--primary);
 
 }
+.tech-stack{
 
+padding:80px 10%;
+
+}
+
+.tech-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+gap:25px;
+
+}
+
+.tech-card{
+
+background:#121212;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+.tech-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 20px cyan;
+
+}
+
+.tech-card i{
+
+font-size:55px;
+
+color:#00ffff;
+
+margin-bottom:20px;
+
+}
+
+.tech-card h3{
+
+color:white;
+
+}
 /* ==========================================
    SKILLS
 ========================================== */
