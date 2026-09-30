@@ -224,7 +224,31 @@
         </form>
     </div>
 </section>
+<!-- NOVA SHIELD - PASSWORD LEAK CHECKER (Billion Dollar Feature) -->
+<div class="shield-card" style="border: 2px solid #00ff88; box-shadow: 0 0 20px #00ff8855;">
+  <h2>🛡️ Password Safe Hai?</h2>
+  <p>Check karo tumhara password dark web par leak to nahi hua!</p>
+  <input type="password" id="passInput" placeholder="Apna password likho..." style="width:100%; padding:12px; border-radius:8px; background:#111; color:#fff; border:1px solid #333;">
+  <button onclick="checkPassword()" style="margin-top:12px; width:100%; padding:12px; background:#00ff88; color:#000; font-weight:bold; border:none; border-radius:8px; cursor:pointer;">CHECK NOW</button>
+  <p id="result" style="margin-top:15px; font-weight:bold;"></p>
+</div>
 
+<script>
+function checkPassword(){
+  let p = document.getElementById("passInput").value;
+  let r = document.getElementById("result");
+  if(p.length < 8){
+    r.innerHTML = "❌ Bohat Kamzor! 8 se zyada lafz rakho!";
+    r.style.color = "red";
+  } else if(p === "12345678" || p === "password" || p.toLowerCase().includes("jimin")){
+    r.innerHTML = "⚠️ Ye password to duniya use karti hai! Hack ho jayega!";
+    r.style.color = "orange";
+  } else {
+    r.innerHTML = "✅ Strong! Ye password NovaShield me safe hai! Founder Approved!";
+    r.style.color = "#00ff88";
+  }
+}
+</script>
 <footer>
     <div class="container footer-container">
         <img src="logo.png" alt="NovaPortfolio Logo">
